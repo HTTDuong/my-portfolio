@@ -1,16 +1,3 @@
-/*
-Websites:
-
-- https://github.com/pmndrs/gltfjsx (GLTF JSX for 3D Models)
-- https://lucide.dev/icons/ (Lucide Icons)
-- https://github.com/anuraghazra/github-readme-stats (Github Readme Stats)
-- https://skillicons.dev (Skill Icons to show skills)
-- https://github-readme-streak-stats.herokuapp.com (Github Readme Streak Stats)
-
-
-
-*/
-
 export const projectsData = [
   {
     id: 1,
@@ -85,29 +72,57 @@ export const projectsData = [
 ];
 
 export const BtnList = [
-  { label: "Home", link: "/", icon: "home", newTab: false },
-  { label: "About", link: "/about", icon: "about", newTab: false },
-  { label: "Projects", link: "/projects", icon: "projects", newTab: false },
-  { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   {
+    id: 1,
+    label: "Home",
+    link: "/",
+    icon: "home",
+    newTab: false,
+  },
+  {
+    id: 2,
+    label: "About",
+    link: "/about",
+    icon: "about",
+    newTab: false,
+  },
+  {
+    id: 3,
+    label: "Projects",
+    link: "/projects",
+    icon: "projects",
+    newTab: false,
+  },
+  {
+    id: 4,
+    label: "Contact",
+    link: "/contact",
+    icon: "contact",
+    newTab: false,
+  },
+  {
+    id: 5,
     label: "Github",
-    link: "https://www.github.com/codebucks27",
+    link: "https://github.com/HTTDuong",
     icon: "github",
     newTab: true,
   },
   {
+    id: 6,
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
+    link: "https://www.linkedin.com/in/httduong/",
     icon: "linkedin",
     newTab: true,
   },
   {
+    id: 7,
     label: "X",
-    link: "https://www.x.com/code_bucks",
+    link: "",
     icon: "twitter",
     newTab: true,
   },
   {
+    id: 8,
     label: "Resume",
     link: "/resume.pdf",
     icon: "resume",
