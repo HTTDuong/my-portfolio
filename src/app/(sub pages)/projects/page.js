@@ -5,7 +5,7 @@ import { projectsData } from "../../data";
 import RenderModel from "@/components/RenderModel";
 import Staff from "@/components/models/Staff";
 
-export default function Home() {
+export default function Projects() {
   return (
     <>
       <Image
