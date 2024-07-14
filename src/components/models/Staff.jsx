@@ -11,62 +11,136 @@ const Staff = React.memo(function Staff(props) {
   const { nodes, materials } = useGLTF("/models/staff-transformed.glb");
   const modelRef = useRef();
 
-  useFrame(() => {
-    modelRef.current.rotation.y += 0.007;
+  useFrame((state) => {
+    modelRef.current.position.y =
+      -1.0 + Math.sin(state.clock.elapsedTime) * 0.15;
   });
 
   return (
     <group
       {...props}
       dispose={null}
-      scale={[3, 3, 3]}
-      position={[0, -2, 0]}
+      scale={[0.15, 0.15, 0.15]}
+      position={[0.7, -3.0, 0]}
+      rotation={[0.2, -0.2, 0]}
       ref={modelRef}
     >
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Wizard_Staff3_Wizard_Staff3_0.geometry}
-        material={materials.Wizard_Staff3}
-        position={[-0.041, 0.983, 0.768]}
-        rotation={[0, Math.PI / 2, 0]}
-        scale={0.04}
+        geometry={nodes.Object_3.geometry}
+        material={materials.fire}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Wizard_Staff3_Wizard_Staff3_0_1.geometry}
-        material={materials.Wizard_Staff3}
-        position={[-0.041, 0.983, 0.768]}
-        rotation={[0, Math.PI / 2, 0]}
-        scale={0.04}
+        geometry={nodes.Object_4_1.geometry}
+        material={materials.candle}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Wizard_Staff3_Wizard_Staff3_0_2.geometry}
-        material={materials.Wizard_Staff3}
-        position={[-0.041, 0.983, 0.768]}
-        rotation={[0, Math.PI / 2, 0]}
-        scale={0.04}
+        geometry={nodes.Object_5.geometry}
+        material={materials.candle}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Wizard_Staff3_Wizard_Staff3_0_3.geometry}
-        material={materials.Wizard_Staff3}
-        position={[-0.041, 0.983, 0.768]}
-        rotation={[0, Math.PI / 2, 0]}
-        scale={0.04}
+        geometry={nodes.Object_34.geometry}
+        material={materials.material}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Wizard_Staff2_Wizard_Staff2_0.geometry}
-        material={materials.Wizard_Staff2}
-        position={[-0.041, 0.983, 0.768]}
-        rotation={[0, Math.PI / 2, 0]}
-        scale={0.04}
+        geometry={nodes.Object_4.geometry}
+        material={materials.dress}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_6.geometry}
+        material={materials.decor}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_8.geometry}
+        material={materials.thing}
+        position={[-6.757, -7.448, 3.635]}
+        rotation={[0.172, 0.016, 0.233]}
+        scale={0.874}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_36.geometry}
+        material={materials.fire}
+        position={[-7.255, 12.045, -0.978]}
+        rotation={[0.051, -0.094, -0.065]}
+        scale={[0.176, 0.21, 0.132]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_38.geometry}
+        material={materials.candle}
+        position={[-6.906, 11.627, -1.049]}
+        rotation={[0.145, -0.021, 0.271]}
+        scale={[0.024, 0.162, 0.024]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_74.geometry}
+        material={materials.material}
+        position={[-3.831, -1.899, 0.259]}
+        scale={[0.105, 0.033, 0.104]}
+      />
+      <primitive object={nodes.GLTF_created_0_rootJoint} />
+      <skinnedMesh
+        geometry={nodes.Object_163.geometry}
+        material={materials.dress}
+        skeleton={nodes.Object_163.skeleton}
+      />
+      <skinnedMesh
+        geometry={nodes.Object_165.geometry}
+        material={materials.dress}
+        skeleton={nodes.Object_165.skeleton}
+      />
+      <skinnedMesh
+        geometry={nodes.Object_167.geometry}
+        material={materials.hair}
+        skeleton={nodes.Object_167.skeleton}
+      />
+      <skinnedMesh
+        geometry={nodes.Object_169.geometry}
+        material={materials.skin}
+        skeleton={nodes.Object_169.skeleton}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_157.geometry}
+        material={materials.skin}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_159.geometry}
+        material={materials.panty}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_173.geometry}
+        material={materials.hair}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_597.geometry}
+        material={materials.magick}
+        position={[0.85, 14.208, 4.685]}
       />
     </group>
   );

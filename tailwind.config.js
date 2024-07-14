@@ -19,7 +19,7 @@ module.exports = {
       },
       backgroundImage: {
         "firefly-radial":
-          "radial-gradient(50% 50% at 50% 50%, rgba(253,255,80,0.5) 0%, rgba(27,217,2117,0) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(253,255,80,0.8) 0%, rgba(217,217,217,0) 100%)",
       },
       boxShadow: {
         "glass-inset": "inset 0 17px 5px -9px rgba(254,254,91,0.05)",
@@ -34,6 +34,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 40s linear infinite",
         "spin-slow-reverse": "spin-reverse 40s linear infinite",
+      },
+      screens: {
+        xs: "480px",
       },
     },
   },

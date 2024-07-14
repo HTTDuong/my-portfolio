@@ -12,7 +12,7 @@ const Wizard = React.memo(function Wizard(props) {
 
   useFrame((state) => {
     modelRef.current.position.y =
-      -1.5 + Math.sin(state.clock.elapsedTime) * 0.15;
+      -2.5 + Math.sin(state.clock.elapsedTime) * 0.15;
   });
 
   return (
@@ -20,190 +20,138 @@ const Wizard = React.memo(function Wizard(props) {
       {...props}
       dispose={null}
       ref={modelRef}
-      position={[0, -1.5, 0]}
-      scale={[0.06, 0.06, 0.06]}
-      rotation={[0.25, 0, 0]}
+      position={[0, -2.5, 0]}
+      scale={[1.0, 1.0, 1.0]}
+      rotation={[0.1, 0.1, 0]}
     >
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Evil_Hathattty_mesh_Evil_HatBLN_Hat_0.geometry}
-        material={materials.Evil_HatBLN_Hat}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.WandpCylinder1_Wandq_0.geometry}
-        material={materials.PaletteMaterial001}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.R_shoe_tongue_mesh_BLN_Shoe_tongue_0.geometry}
-        material={materials.BLN_Shoe_tongue}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Chest_piece_mesh_BLN_chest_piece_0.geometry}
-        material={materials.BLN_chest_piece}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Right_Eyeball_Mesh_Lam_eyeball_0.geometry}
-        material={materials.material_0}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.pants_mesh_BLN_Pants_0.geometry}
-        material={materials.BLN_Pants}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.lower_coat_mesh_FK_BLN_Lower_coat_0.geometry}
-        material={materials.BLN_Lower_coat}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.R_shoe_mesh_BLN_shoes_0.geometry}
-        material={materials.BLN_shoes}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Upper_coat_mesh_BLN_upper_coat_0.geometry}
-        material={materials.BLN_upper_coat}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.upper_body_mesh_BLN_shirt_0.geometry}
-        material={materials.BLN_shirt}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.upper_body_mesh_BLN_Shirt_collar_0.geometry}
-        material={materials.BLN_Shirt_collar}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Coat_collar_mesh_BLN_collar_piece_0.geometry}
-        material={materials.BLN_collar_piece}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.BookpolySurface5_Bookblinn1_0.geometry}
-        material={materials.Bookblinn1}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.BookBook_corner_mesh4_Booklam_book_corners_0.geometry}
-        material={materials.Booklam_book_corners}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.BookpolySurface20_BookBLN_Metal_parts_0.geometry}
-        material={materials.BookBLN_Metal_parts}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.BookFront_glow_mesh_Booklambert8_0.geometry}
-        material={materials.PaletteMaterial002}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.BookpolySurface2_BookBLN_Book_covers_0.geometry}
-        material={materials.BookBLN_Book_covers}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.BookpCube10_Booklam_front_bits_0.geometry}
-        material={materials.material_2}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.BookpolySurface28_Booklam_back_bits_0.geometry}
-        material={materials.Booklam_back_bits}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Evil_HatpPlane1_Evil_HatsolidShader_0.geometry}
-        material={materials.PaletteMaterial003}
-        position={[-1.057, 0, 0]}
-        rotation={[0, 0.224, 0]}
-        scale={0.832}
-      />
+      <group name="Sketchfab_Scene">
+        <group name="GLTF_SceneRootNode" scale={0.27}>
+          <group
+            name="Essence_6"
+            position={[3.148, 11.501, -5.188]}
+            rotation={[0, 0, 0]}
+            scale={1.874}
+          >
+            <mesh
+              name="Object_4"
+              castShadow
+              receiveShadow
+              geometry={nodes.Object_4.geometry}
+              material={materials.PaletteMaterial001}
+            />
+          </group>
+          <group
+            name="Essence001_7"
+            position={[4.362, 7.463, 4.313]}
+            rotation={[0, 0, 0]}
+            scale={1.186}
+          >
+            <mesh
+              name="Object_6"
+              castShadow
+              receiveShadow
+              geometry={nodes.Object_6.geometry}
+              material={materials.PaletteMaterial001}
+            />
+          </group>
+          <group
+            name="Essence002_8"
+            position={[-0.283, 6.382, -3.283]}
+            rotation={[0, 0, 0]}
+            scale={2.195}
+          >
+            <mesh
+              name="Object_8"
+              castShadow
+              receiveShadow
+              geometry={nodes.Object_8.geometry}
+              material={materials.PaletteMaterial001}
+            />
+          </group>
+          <group
+            name="Essence003_9"
+            position={[-2.921, 10.702, 2.064]}
+            rotation={[0, 0, 0]}
+            scale={1.331}
+          >
+            <mesh
+              name="Object_10"
+              castShadow
+              receiveShadow
+              geometry={nodes.Object_10.geometry}
+              material={materials.PaletteMaterial001}
+            />
+          </group>
+          <group
+            name="Essence004_10"
+            position={[-2.228, 13.762, -4.177]}
+            rotation={[0, 0, 0]}
+            scale={0.47}
+          >
+            <mesh
+              name="Object_12"
+              castShadow
+              receiveShadow
+              geometry={nodes.Object_12.geometry}
+              material={materials.PaletteMaterial001}
+            />
+          </group>
+          <group
+            name="Essence005_16"
+            position={[-2.43, 12.034, 3.056]}
+            rotation={[0, 0, 0]}
+            scale={0.602}
+          >
+            <mesh
+              name="Object_29"
+              castShadow
+              receiveShadow
+              geometry={nodes.Object_29.geometry}
+              material={materials.PaletteMaterial001}
+            />
+          </group>
+        </group>
+        <mesh
+          name="Object_14"
+          castShadow
+          receiveShadow
+          geometry={nodes.Object_14.geometry}
+          material={materials.PaletteMaterial002}
+          position={[-0.452, 1.993, 0.094]}
+          rotation={[0, 0.148, 0]}
+          scale={0.035}
+        />
+        <mesh
+          name="Object_16"
+          castShadow
+          receiveShadow
+          geometry={nodes.Object_16.geometry}
+          material={materials.PaletteMaterial003}
+          position={[-0.447, 4.185, 0.065]}
+          rotation={[-0.015, -0.401, -0.037]}
+          scale={[0.28, 0.28, 0.293]}
+        />
+        <mesh
+          name="Object_17"
+          castShadow
+          receiveShadow
+          geometry={nodes.Object_17.geometry}
+          material={materials.PaletteMaterial004}
+          position={[-0.447, 4.185, 0.065]}
+          rotation={[-0.015, -0.401, -0.037]}
+          scale={[0.28, 0.28, 0.293]}
+        />
+        <mesh
+          name="Object_19"
+          castShadow
+          receiveShadow
+          geometry={nodes.Object_19.geometry}
+          material={materials.PaletteMaterial001}
+          position={[0.195, 2.51, 0]}
+          rotation={[0, 0, 0.096]}
+          scale={[0.582, 1.174, 0.522]}
+        />
+      </group>
     </group>
   );
 });

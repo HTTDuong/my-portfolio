@@ -20,16 +20,57 @@ const HatModel = React.memo(function HatModel(props) {
       {...props}
       dispose={null}
       ref={modelRef}
-      scale={[1.8, 1.8, 1.8]}
-      rotation={[0.4, -1, 0]}
+      scale={[0.2, 0.2, 0.2]}
+      rotation={[0.3, -0.5, 0]}
       position={[0, 0, 0]}
     >
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Object_2.geometry}
-        material={materials.initialShadingGroup}
-        position={[0, -3.867, 0]}
+        geometry={nodes.Cover_Cover_0.geometry}
+        material={materials.Cover}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={[5.681, 5.681, 1]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001_Paper_Block_0.geometry}
+        material={materials.Paper_Block}
+        rotation={[-Math.PI / 2, 0, 0]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.CoverCorner_Cover_Corner_0.geometry}
+        material={materials.Cover_Corner}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={[5.681, 5.681, 1]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Magic_Circle_Magic_Circle_0.geometry}
+        material={materials.Magic_Circle}
+        position={[0, 3.493, 0]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={4.988}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Magic_Storm_Magic_Storm_0.geometry}
+        material={materials.Magic_Storm}
+        position={[0, 2.851, 0]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={[4.659, 4.659, 1]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Magic_Particle_Magic_Particle_0.geometry}
+        material={materials.Magic_Particle}
+        position={[0, 5.6, 0]}
         rotation={[-Math.PI / 2, 0, 0]}
       />
     </group>
