@@ -13,8 +13,8 @@ const ProjectLayout = ({ name, description, date, demoLink }) => {
   return (
     <NavLink
       variants={item}
-      href={demoLink}
-      target={"_blank"}
+      href={"#"}
+      target={"_self"}
       className="text-sm md:text-base flex items-center justify-between w-full relative rounded-lg overflow-hidden p-4 md:p-6 cursor-pointer custom-bg"
     >
       <div className="flex items-center justify-center space-x-2">

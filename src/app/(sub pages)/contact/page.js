@@ -10,7 +10,7 @@ export default function Contact() {
         sizes="100vw"
         src={bg}
         alt="Next.js Portfolio website's about page background image"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-50"
+        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-30"
       />
 
       <article className="relative w-full flex flex-col items-center justify-center py-8 sm:py-0 space-y-8">
