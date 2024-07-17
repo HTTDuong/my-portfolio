@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "../../public/background/home-background.jpeg";
+import bg from "../../public/background/home.png";
 import RenderModel from "@/components/RenderModel";
 import Navigation from "@/components/navigation";
 import dynamic from "next/dynamic";
@@ -17,7 +17,7 @@ export default function Home() {
         src={bg}
         alt="background"
         fill
-        className="w-full h-full object-cover object-center opacity-25"
+        className="w-full h-full object-cover object-center opacity-70"
       />
       <div className="w-full h-screen">
         <Navigation />
