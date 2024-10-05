@@ -96,7 +96,7 @@ export const BtnList = [
   {
     id: 8,
     label: "Resume",
-    link: "/HaThiThuyDuong_Resume.pdf",
+    link: "#",
     icon: "resume",
     newTab: true,
   },
